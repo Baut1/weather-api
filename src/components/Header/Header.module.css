@@ -1,0 +1,20 @@
+.heading {
+    background-color: skyblue;
+}
+
+.emoji {
+    font-size: 35px;
+    text-decoration: none;
+    background-color: skyblue;
+    border: none;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: whitesmoke;
+}

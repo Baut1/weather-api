@@ -1,38 +1,89 @@
+* {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* LOADER */
+
+.container{
+  width: 400px;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.weather-sun{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+}
+
+.sun{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg,#F3A966,yellow);
+  border-radius: 100%;
+  transform: rotate(0deg);
+  animation: xuanzhuang 12s infinite linear;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+
+.rays{
+  width: 8px;
+  height: 15px;
+  background: yellow;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -25px;
+  box-shadow: 0 135px yellow;
+  border-radius: 4px;
+  transform-origin: 0px 75px;
+}
+
+.rays:nth-child(2){
+  transform: rotate(45deg);
+}
+
+.rays:nth-child(3){
+  transform: rotate(90deg);
+}
+
+.rays:nth-child(4){
+  transform: rotate(135deg);
+}
+
+@keyframes xuanzhuang {
+  100% { transform: rotate(360deg); }
+}
+
+/*  */
+
 .App {
+  height: 100vh;
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)),
+                       url("https://www.gannett-cdn.com/presto/2018/12/15/USAT/2e7b9863-85ac-4faa-aad3-096fc1826c20-GettyImages-841647034.jpg?crop=2559,1439,x0,y269&width=2559&height=1439&format=pjpg&auto=webp");
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb:active {
+  background: darkgrey;
 }

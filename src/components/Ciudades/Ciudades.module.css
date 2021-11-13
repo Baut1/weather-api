@@ -1,0 +1,10 @@
+.ciudades {
+    position: fixed;
+    width: 35vw;
+}
+
+.lista {
+    height: 55vh;
+    overflow-y: scroll;
+    list-style: none;
+}

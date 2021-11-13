@@ -1,0 +1,16 @@
+.footer{
+    position: fixed;
+    height: 5vh;
+    bottom: 0;
+    width: 100%;
+    background-color: sienna;
+}
+
+.contact {
+    color: white;
+    line-height: 5vh;
+}
+
+.link {
+    color: white;
+}
